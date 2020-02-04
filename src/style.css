@@ -1,1 +1,20 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  background-color: #666;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1256px;
+}
+
+.personal-avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
