@@ -10,11 +10,70 @@ a {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1256px;
+  padding: 30px;
+  max-width: 1024px;
+  background-color: #aaa;
 }
 
 .personal-avatar {
   width: 100px;
   border-radius: 50%;
+}
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px auto 20px;
+      grid-template-columns: 20px auto 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left-button, .right-button {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-mod:hover {
+  cursor: pointer;
+  background-color: #000;
+}
+
+.tile {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tile-img {
+  position: relative;
+}
+
+.tile-img .sticker {
+  position: absolute;
+  left: 15px;
+  color: #fff;
+}
+
+.tile-img .preview {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
