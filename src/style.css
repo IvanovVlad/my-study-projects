@@ -52,8 +52,8 @@ a {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 25% auto;
+      grid-template-columns: 25% auto;
   grid-gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -79,14 +79,5 @@ a {
 
 .iframe-wrapper {
   display: none;
-  width: 80%;
-  height: 100vh;
-  margin: 0 auto;
-}
-
-.iframe-wrapper .controls {
-  position: fixed;
-  top: 0;
-  right: 0;
 }
 /*# sourceMappingURL=style.css.map */

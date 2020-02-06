@@ -1,0 +1,46 @@
+body
+    margin: 0
+    background-color: #666
+a
+    text-decoration: none
+    color: #000
+.wrapper
+    margin: 0 auto
+    padding: 30px
+    max-width: 1024px
+    background-color: #aaa
+.personal
+    &-avatar
+        width: 100px
+        border-radius: 50%
+.projects
+    display: grid
+    grid-template-columns: 20px auto 20px
+    align-items: center
+.left-button, .right-button
+    height: 100%
+    display: grid
+    align-items: center
+    justify-content: center
+.button-mod
+    &:hover
+        cursor: pointer
+        background-color: #000
+.tile
+    width: 80%
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 25% auto
+    grid-gap: 20px
+    justify-content: center
+    align-items: center
+    &-img
+        position: relative
+        .sticker
+            position: absolute
+            left: 15px
+            color: #fff
+        .preview
+            width: 100%
+.iframe-wrapper
+    display: none
