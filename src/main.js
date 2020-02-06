@@ -94,6 +94,7 @@ class ProjectsHolder {
 }
 
 const htmlHolder = new ProjectsHolder(document.querySelector('#html-css'));
+const jsHolder = new ProjectsHolder(document.querySelector('#js'));
 
 function showIFrame(link, mobileWidth) {
     document.querySelector('.wrapper').style.display = 'none';
@@ -126,5 +127,5 @@ document.querySelector('#html-css #theyalow').onclick = () => {
 }
 
 document.querySelector('#html-css #repair').onclick = () => {
-    showIFrame('https://my-repair-design-project.netlify.com/', 375);
+    showIFrame('https://my-repair-design-project.netlify.com', 375);
 }
