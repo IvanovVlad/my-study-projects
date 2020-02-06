@@ -85,12 +85,11 @@ class ProjectsHolder {
     }
 
     clearContent() {
-        this.node.querySelector('.content').innerHTML = '';
+        this.tiles.forEach(tile => tile.style.display = 'none');
     }
 
     displayNode() {
-        this.node.querySelector('.content')
-            .appendChild(this.tiles[this.displayNodeId]);
+        this.tiles[this.displayNodeId].style.display = 'grid';
     }
 }
 
