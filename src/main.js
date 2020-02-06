@@ -94,3 +94,37 @@ class ProjectsHolder {
 }
 
 const htmlHolder = new ProjectsHolder(document.querySelector('#html-css'));
+
+function showIFrame(link, mobileWidth) {
+    document.querySelector('.wrapper').style.display = 'none';
+
+    const frameWrapper = document.querySelector('.iframe-wrapper');
+    frameWrapper.style.display = 'block';
+    frameWrapper.style.width = '1320px';
+    document.querySelector('#iframe').src = link;
+
+    document.querySelector('#mode-button').onclick = (e) => {
+        const text = e.target.innerText;
+        if (text.toUpperCase() === 'MOBILE') {
+            frameWrapper.style.width = mobileWidth + 'px';
+            e.target.innerText = 'Desktop';
+        } else {
+            frameWrapper.style.width = '1320px';
+            e.target.innerText = 'Mobile';
+        }
+        
+    }
+
+    document.querySelector('#back-button').onclick = () => {
+        document.querySelector('.wrapper').style.display = 'block';
+        document.querySelector('.iframe-wrapper').style.display = 'none';
+    }
+}
+
+document.querySelector('#html-css #theyalow').onclick = () => {
+    showIFrame('https://my-theyalow.netlify.com', 640);
+}
+
+document.querySelector('#html-css #repair').onclick = () => {
+    showIFrame('https://my-repair-design-project.netlify.com/', 375);
+}
