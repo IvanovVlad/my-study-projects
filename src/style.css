@@ -45,6 +45,7 @@ a {
 .button-mod:hover {
   cursor: pointer;
   background-color: #000;
+  color: #fff;
 }
 
 .tile {
@@ -75,6 +76,11 @@ a {
 
 .tile-img .preview {
   width: 100%;
+  min-width: 240px;
+}
+
+.tile-img .preview:hover {
+  cursor: pointer;
 }
 
 .iframe-wrapper {
@@ -90,6 +96,9 @@ a {
 
 .iframe-wrapper .iframe-button {
   padding: 10px;
+  margin: 5px;
+  opacity: 0.5;
+  background-color: #fff;
   cursor: pointer;
 }
 
